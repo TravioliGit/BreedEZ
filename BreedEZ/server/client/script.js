@@ -1,10 +1,3 @@
-// i tried my best to organise the order of the functions themselves; the upper third contains functions designed to build and populate the page
-// the lower third contains functions designed solely to submit, retrieve and manipulate data to/from the database
-// the middle third contains functions designed to use data gatheredfrom the lower third functions to use/manipulate the upper third functions to build the pages
-// bespoke references are found within the code (anything specific to one function)
-// code for get, put and post requests adapted from staged-simple-message-board
-// a large amount of this file is just DOM we learned in class and get/put/post requests
-
 // global variables. will track page number, if user is new, override value for page loading, user id, filter values, index values
 let pageNumber = 0;
 let userCreateCheck = false;
@@ -989,8 +982,9 @@ async function showChatScreen(conversation) {
     const convoList = document.createElement('div');
     convoList.id = 'convoList';
     start.append(convoList);
-    console.log(conversation[0].messagesender);
-    // sets up containers to show messages. did the iterative loop because for some f-in reason for-each loops don't like me anymore
+    
+    if (conversation) {
+        // sets up containers to show messages. did the iterative loop because for some f-in reason for-each loops don't like me anymore
     for (let i=0; i<conversation.length; i++) {
         let index = conversation[i].messagesender;
         // settings for outbound messages
@@ -1027,6 +1021,8 @@ async function showChatScreen(conversation) {
             content.textContent = conversation[i].messagecontent;
             msg.append(content);
         }
+      }
+    
     } 
 
     // sets up the space for the user to enter and send messages. adds click and keyup events 
