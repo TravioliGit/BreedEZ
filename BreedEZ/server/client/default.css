@@ -1,0 +1,311 @@
+
+
+.hidden {
+    display: none;
+}
+
+main {
+    background-color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+
+.colourful {
+    color: red;
+}
+
+header {
+    width: 100%;
+    position: fixed;  
+    top: 0; 
+}
+
+nav{
+    /*consider changing this to a grid display if spacing is too difficult to make work*/
+    display: flex;
+    justify-content: center;
+    align-items: center;	
+    min-height: 9vh;
+    max-height: 16vh;
+    background-color: #0099ff;
+    border-bottom: thick solid;
+    border-bottom-color: black;
+}
+
+#headerLogo{
+    size: 20vw;
+}
+
+.headerLinks li{
+    list-style: none;
+    display: inline-block;
+    padding: 3vw, 3vw;
+}
+
+.headerLinks img{
+    width: 20vw;
+    color-adjust: white;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+    main {
+        width: auto;   
+    }
+}
+
+#startPage {
+    background-color: aliceblue;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    align-items: center;
+    text-align: center;
+}
+
+#startLabel {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+#fieldLabel {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#showCreate {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#showLogin {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#submitLogin {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#locationDropDown {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#ageDropDown {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#sexDropDown {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#breedDropDown {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#nameEntry {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#passEntry {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#dogNameEntry {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#aboutEntry {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#profileList {
+    background-color: aliceblue;
+    padding: 1em;
+}
+
+#messageList {
+    background-color: aliceblue;
+    padding: 1em;
+}
+
+#userProfileMain {
+    background-color: aliceblue;
+    padding: 1em;
+}
+
+#profileView {
+    background-color: aliceblue;
+}
+
+#showCreate {
+    text-align: center;
+}
+
+#userDogChoice {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+#profileContent {
+    display: inline-grid;
+    align-content: center;
+    grid-template-columns: 15em;
+    grid-template-rows: 6.5em;
+    margin: 0.5rem;
+    border-color: black;
+    border-style: solid;
+}
+
+#dogImage{
+    text-align: center;
+    max-width: 240px;
+    max-height: 165px;
+}
+
+#dogName{
+    background-color: white;
+    border-top: solid;
+    border-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#messageInfo {
+    display: grid;
+    grid-template-columns: 15.2rem auto ;
+    grid-template-rows: 6.5rem auto;
+    margin: 0.5rem;
+    border-color: black;
+    border-style: solid;
+}
+
+#messageImage{
+    background-color: white;
+    max-width: 240px;
+    border-right: solid black;
+}
+
+#messageContent {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1.5em auto;
+}
+
+#messageName{
+    background-color: white;
+    border-bottom: solid black;
+    padding: 0.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#messagePreview {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.2em;
+}
+
+#clientMessage {
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 90%;
+    border-radius: 5px 20px 5px 20px;
+    border: 3px solid black;
+    background-color: cyan;
+    text-align: right;
+}
+
+#clientMessageText {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: right;
+    text-anchor: start;
+}
+
+#clientMessageName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: right;
+}
+
+#profileMessage {
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: left;
+    width: 90%;
+    border-radius: 20px 5px 20px 5px;
+    border: 3px solid black;
+    background-color: lightgrey;
+}
+
+#profileMessageText {
+    max-width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: left;
+}
+
+#profileMessageName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: left;
+}
+
+#convoList {
+    text-align: center;
+    align-items: center;
+}
+
+#convoFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    background-color:#0099ff;
+    text-align: center;
+}
+
+#messageEntry {
+    padding: 1em;
+    max-width: 50%;
+}
+
+#submitButton {
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#breedImage {
+    max-width: 600px;
+    max-height: 200px;
+}
+
+#breedImagePlaceholder {
+    max-width: 600px;
+    max-height: 200px;
+}

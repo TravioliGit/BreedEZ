@@ -1,0 +1,32 @@
+{
+  "name": "breedez",
+  "version": "1.0.0",
+  "description": "'Jack Travis' Software Engineering Coursework'",
+  "main": "server.js",
+  "scripts": {
+    "start": "cd BreedEZ/server && nodemon server",
+    "setup": "createdb data && psql data < BreedEZ/server/data.sql",
+    "drop": "dropdb data"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Travlaad/BreedEZ.git"
+  },
+  "keywords": [
+    "'breedEZ'",
+    "'coursework'"
+  ],
+  "author": "Jack Travis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Travlaad/BreedEZ/issues"
+  },
+  "homepage": "https://github.com/Travlaad/BreedEZ#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
